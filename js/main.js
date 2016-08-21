@@ -43,8 +43,10 @@ function loadMod(mod, number) {
 
 }
 
-setTimeout(function() {
+$(document).ready(function(){
+	setTimeout(function() {
 	var modCount = modList.length;
-	loadModList()
-	$('#loadText').text("There is a total of " + modCount + " mods")
+	loadModList();
+	$('#loadText').text("There is a total of " + modCount + " mods");
 }, 750);
+});
