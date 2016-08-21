@@ -81,8 +81,8 @@ createMod(
 createMod(
 	"Ship Builder",
 	"Endless Sky",
-	"http://i.imgur.com/rHP0mXz.jpg",
 	"Get position coordinates for your ships.",
+	"http://i.imgur.com/rHP0mXz.jpg",
 	"http://endless-sky.github.io/ship_builder.html",
 	"#",
 	"ship, modding, tool"
