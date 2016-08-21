@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="A mod sharing website for Endless Sky">
+	<meta name="author" content="Evan (@evan153 Github)">
+
+	<title>Endless Mod Share</title>
+
+	<!-- Bootstrap -->
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Main CSS Theme -->
+	<link href="css/main.css" rel="stylesheet" >
+	<!-- Custom Fonts -->
+	<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link rel="icon" href="img/sparrow.png">
+</head>
+<body>
+	<!-- Top Section -->
+	<div class="top-wrap">
+		<h1 class="text-center title-main">Endless Sky - Mod Share</h1>
+
+		<div class="form-group search-wrap">
+			<div class="input-group">
+				<input class="search-input form-control" type="text" name="search" placeholder="Search tags or mod name">
+				<span class="input-group-btn">
+					<button class="btn btn-primary" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+				</span>
+			</div>
+		</div>
+
+	</div> 
+	<!-- End Top Section -->
+	<hr>
+	<!-- Mid Section / Mod displays -->
+	<div class="mid-wrap">
+	<h3 id="loadText" class="text-center">Loading mods...</h3>
+		<div class="row">
+			<div class="col-sm-3 col-sm-offset-1" id="firstCol"></div>
+			<div class="col-sm-3" id="secondCol"></div>
+			<div class="col-sm-3" id="thirdCol"></div>
+		</div>
+	</div>
+	<!-- End Mid Section / Mod displays -->
+
+	<!-- jQuery -->
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<!-- Bootstrap Core JavaScript -->
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!-- Main JavaScript -->
+	<script src="js/mods.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
