@@ -66,7 +66,7 @@ createMod(
 	"Ship Generator",
 	"Legolas",
 	"Ever wanted to easily create ships? (as if it's not already easy) Well, now you can! I created a simple tool that will generate the code for a ship.",
-	"img/mods/shipgen82116.jpg",
+	"img/mods/shipgen82116.JPG",
 	"https://evan153.github.io/Endless-Sky-Ship-Generator/",
 	"https://steamcommunity.com/sharedfiles/filedetails/?id=718279752",
 	"tool, ship, code, modding"

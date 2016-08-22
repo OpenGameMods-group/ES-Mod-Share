@@ -20,14 +20,14 @@ function loadMod(mod, number) {
 	// Create the html
 	var modHTML = '<div class="mod">' +
 					'<div class="mod-preview" data-toggle="modal" data-target="#' + titleNoS + '">' +
-					'<img class="preview-img" src="' + mod.image + '" alt="' + mod.title + '"' + 'onerror="this.onerror=null; this.src=\'img/github-mark.png\';"' + '>' +
+					'<img class="preview-img" src="' + mod.image + '" alt="' + mod.title + '"' + 'onerror="this.onerror=null; this.src=\'img/web/github-mark.png\';"' + '>' +
 					'<h4 class="preview-title">' + mod.title + '</h3>' +
 					'</div>' +
 
 					'<div class="modal fade" id="' + titleNoS + '" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">' +
 					'<div class="modal-dialog modal-lg" role="document">' +
 					'<div class="modal-content mod-content">' +
-					'<img class="mod-img" src="' + mod.image + '" alt="' + mod.title + '"' + 'onerror="this.onerror=null; this.src=\'img/github-mark.png\';"' + '>' +
+					'<img class="mod-img" src="' + mod.image + '" alt="' + mod.title + '"' + 'onerror="this.onerror=null; this.src=\'img/web/github-mark.png\';"' + '>' +
 					'<h2 class="mod-title">' + mod.title + '</h2>' +
 					'<h3 class="mod-author">By ' + mod.author + '</h3>' +
 					'<p class="mod-description">' + mod.description + '</p>' +
