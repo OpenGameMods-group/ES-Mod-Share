@@ -20,6 +20,7 @@ function createMod(title, author, description, image, download, infoLink, tags) 
 // USE HTTPS for external links or add your image to the img folder and link to that.
 // Don't copy steam preview image urls upload to imgur or to the repo
 // Use unique names
+// Use small images less than 1mb in size
 
 // F.A.Q
 // No info link? Just put a #
@@ -36,7 +37,7 @@ createMod(
 	"Example Author",
 	// Use single quotes if you have double quotes inside your text like this
 	'This is just an "example" inside the mods file so people can see how to add their own mod',
-	"img/mods/example.jpg",
+	"img/mods/example.png",
 	"https://www.youtube.com/watch?v=32UGD0fV45g",
 	"https://www.google.com/",
 	"example"

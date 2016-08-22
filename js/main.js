@@ -57,7 +57,7 @@ function switchTheme() {
 	$('.mod-preview').toggleClass("dark");
 	$('.mod-content').toggleClass("dark");
 	if (theme === "light") {
-		$('body').css('background-image', 'url("img/web/spacebg.jpg")');
+		//$('body').css('background-image', 'url("img/web/spacebg.jpg")');
 		$('body').css('background-color', '#000');
 		$('body').css('color', '#fff');
 		theme = "dark";
