@@ -16,7 +16,6 @@ function createMod(title, author, description, image, download, infoLink, tags) 
 // Type createMod(),
 // Then between the parenthesis in quotes type your mod in this order: title, author, description, image, download, infoLink, tags
 // Download, and image should be a link
-// Put new mods at the bottom.
 // USE HTTPS for external links or add your image to the img folder and link to that.
 // Don't copy steam preview image urls upload to imgur or to the repo
 // Use unique names
