@@ -1,5 +1,6 @@
 .title-main {
 	font-weight: bold;
+	cursor: pointer;
 }
 
 .search-wrap {
@@ -15,7 +16,8 @@
 .mod {
 	background: #fff;
 	justify-content: center;
-	margin: 0 auto;
+	margin-bottom: 5px;
+	margin-top: 5px;
 	text-align: center;
 	vertical-align: middle;
 }
@@ -23,7 +25,6 @@
 .mod-preview {
 	border: 2px solid #040404;
 	cursor: pointer;
-	margin: 5px;
 	max-height: 275px;
 	opacity: 1;
 	transition: all 0.2s;
@@ -73,4 +74,18 @@
 
 .tags {
 	font-size: 13px;
+}
+
+.noselect {
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none;   /* Chrome/Safari/Opera */
+	-moz-user-select: none;      /* Firefox */
+	-ms-user-select: none;       /* Internet Explorer/Edge */
+	user-select: none;
+}
+
+/*** DARK THEME ***/
+.dark {
+	background: #222;
+	color: white;
 }

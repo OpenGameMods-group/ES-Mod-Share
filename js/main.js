@@ -1,3 +1,5 @@
+var theme = "light"
+
 function loadModList() {
 	for (var i = modList.length - 1; i >= 0; i--) {
 		loadMod(modList[i], i);
@@ -48,5 +50,19 @@ $(document).ready(function(){
 	var modCount = modList.length;
 	loadModList();
 	$('#loadText').text("There is a total of " + modCount + " mods");
-}, 750);
+}, 1000);
 });
+
+function switchTheme() {
+	$('.mod-preview').toggleClass("dark");
+	$('.mod-content').toggleClass("dark");
+	if (theme === "light") {
+		$('body').css('background-image', 'url("img/web/spacebg.JPG")');
+		$('body').css('color', '#fff');
+		theme = "dark";
+	} else {
+		$('body').css('background-image', '');
+		$('body').css('color', '#000');
+		theme = "light";
+	}
+}
