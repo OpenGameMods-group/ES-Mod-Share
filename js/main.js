@@ -57,11 +57,13 @@ function switchTheme() {
 	$('.mod-preview').toggleClass("dark");
 	$('.mod-content').toggleClass("dark");
 	if (theme === "light") {
-		$('body').css('background-image', 'url("img/web/spacebg.JPG")');
+		$('body').css('background-image', 'url("img/web/spacebg.jpg")');
+		$('body').css('background-color', '#000');
 		$('body').css('color', '#fff');
 		theme = "dark";
 	} else {
 		$('body').css('background-image', '');
+		$('body').css('background-color', '#fff');
 		$('body').css('color', '#000');
 		theme = "light";
 	}
