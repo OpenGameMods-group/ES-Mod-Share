@@ -46,11 +46,12 @@ function loadMod(mod, number) {
 }
 
 $(document).ready(function(){
+	loadModList();
 	setTimeout(function() {
 	var modCount = modList.length;
-	loadModList();
 	$('#loadText').text("There is a total of " + modCount + " mods");
-}, 1000);
+	$('.mod-preview').show();
+	}, 1000);
 });
 
 function switchTheme() {
