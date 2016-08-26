@@ -93,5 +93,14 @@ createMod(
 	"ship, modding, tool"
 	),
 
+createMod(
+	"The Enclave [v0.0.8]",
+	"Storm Crow",
+	"A new galaxy, way unbalanced outfits, and a rubbish story. Fun times.",
+	"http://i.imgur.com/MCvPafd.png",
+	"https://drive.google.com/file/d/0B-tyb7FBVShNeHhxcnk5akVOWU0/view?usp=sharing",
+	"http://steamcommunity.com/app/404410/tradingforum/365172408529296671/",
+	"story, rel, wip"
+	),
 
 ];
