@@ -60,7 +60,7 @@ createMod(
 	"https://avatars0.githubusercontent.com/u/11450262?v=3&s=400",
 	"https://github.com/Amazinite/Enigma-Corp/releases",
 	"https://steamcommunity.com/app/404410/tradingforum/365172547939442297/",
-	"wip, rel, sexy"
+	"story, aliens, systems, ships, outfits, wip"
 	),
 
 createMod(
