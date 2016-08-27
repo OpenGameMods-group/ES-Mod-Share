@@ -113,4 +113,14 @@ createMod(
 	"story, outfitter, outfits, developed"
 	),
 
+createMod(
+	"Le Troll",
+	"Storm Crow (Inspired by Derpy Horse)",
+	"A Star Barge called "Le Troll" that nukes you on sight no matter what is going on. In the middle of the campaign? Nuked. Just got your first Kor ship? Nuked. Kappa.",
+	"https://raw.githubusercontent.com/endless-sky/endless-sky-high-dpi/master/images/ship/star%20barge%402x.png",
+	"https://drive.google.com/file/d/0B-tyb7FBVShNV3hPQ042R3hsNXc/view?usp=sharing",
+	"http://steamcommunity.com/app/404410/discussions/0/357287935542774456/#c357287935542779066",
+	"mini, troll, nukes, person, derpy, horse"
+	),
+
 ];
