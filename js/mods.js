@@ -103,4 +103,13 @@ createMod(
 	"story, rel, wip"
 	),
 
+createMod(
+	"Ursa Polaris",
+	"Local God",
+	"Spend (hundreds of) millions of credits building and stocking a Universal Outfitter Space Station after you complete the main storyline!",
+	"img/mods/UrsaPolaris.png",
+	"https://github.com/LocalGod79/UrsaPolaris/archive/master.zip",
+	"story, outfitter, outfits, developed"
+	),
+
 ];
