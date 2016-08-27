@@ -97,7 +97,7 @@ createMod(
 	"The Enclave",
 	"Storm Crow",
 	"[v0.0.8] A new galaxy, way unbalanced outfits, and a rubbish story. Fun times.",
-	"http://i.imgur.com/MCvPafd.png",
+	"http://i.imgur.com/DVIRu88.png",
 	"https://drive.google.com/file/d/0B-tyb7FBVShNeHhxcnk5akVOWU0/view?usp=sharing",
 	"http://steamcommunity.com/app/404410/tradingforum/365172408529296671/",
 	"story, rel, wip"
