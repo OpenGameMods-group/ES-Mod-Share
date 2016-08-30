@@ -122,5 +122,15 @@ createMod(
 	"http://steamcommunity.com/app/404410/discussions/0/357287935542774456/#c357287935542779066",
 	"mini, troll, nukes, person, derpy, horse"
 	),
+	
+createMod(
+	"The Final Countdown",
+	"Storm Crow (With contributions from whatever band wrote "The Final Countdown)",
+	'Endless Sky except whenever a ship dies it plays a snippet of "The Final Countdown".',
+	"https://rutgershonorsblog.files.wordpress.com/2015/11/final-countdown.jpg",
+	"https://drive.google.com/file/d/0B-tyb7FBVShNLXhRbmY5ZVlhcG8/view?usp=sharing",
+	"http://steamcommunity.com/app/404410/tradingforum/359547436761985762/",
+	"mini, the final countdown, lol, death, explosions, depression"
+	),
 
 ];
