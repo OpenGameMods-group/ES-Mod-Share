@@ -125,7 +125,7 @@ createMod(
 	
 createMod(
 	"The Final Countdown",
-	"Storm Crow (With contributions from whatever band wrote "The Final Countdown)",
+	'Storm Crow (With contributions from whatever band wrote "The Final Countdown)"',
 	'Endless Sky except whenever a ship dies it plays a snippet of "The Final Countdown".',
 	"https://rutgershonorsblog.files.wordpress.com/2015/11/final-countdown.jpg",
 	"https://drive.google.com/file/d/0B-tyb7FBVShNLXhRbmY5ZVlhcG8/view?usp=sharing",
