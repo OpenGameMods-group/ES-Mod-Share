@@ -57,7 +57,7 @@ createMod(
 	"Enigma Corp",
 	"Derpy Horse",
 	"Enigma Corp is an ever expanding mod centered around the Enigma Corporation. Enjoy playing with 100+ new outfits, 50+ new systems, 20+ missions, 12+ new ships, and 6 interactive factions, with plans for much more in the future.",
-	"https://avatars0.githubusercontent.com/u/11450262?v=3&s=400",
+	"http://image.prntscr.com/image/79fe4fcfddcb4cfa9d9bf9e8bc953d07.png",
 	"https://github.com/Amazinite/Enigma-Corp/releases",
 	"https://github.com/Amazinite/Enigma-Corp",
 	"story, aliens, systems, ships, outfits, wip"
