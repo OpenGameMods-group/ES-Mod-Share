@@ -44,6 +44,16 @@ createMod(
 	),
 
 createMod(
+	"Flamethrower Turret",
+	'<a href="https://github.com/itsnickbarry">Nick Barry</a>',
+	"The turret-mounted flamethrower represents the epitome of Free Worlds creative extravagance. So great are its fuel requirements that it comes with a standard fuel pod pre-installed. Smaller ships which lack powerful cooling systems should stay out of range at all costs.",
+	"https://raw.githubusercontent.com/ItsNickBarry/endless-sky-flamethrower-turret/master/images/outfit/flamethrower%20turret%402x.png",
+	"https://github.com/ItsNickBarry/endless-sky-flamethrower-turret/archive/v1.0.0.zip",
+	"https://github.com/ItsNickBarry/endless-sky-flamethrower-turret",
+	"story, outfits, art"
+	),
+
+createMod(
 	"Businessman",
 	"Legolas",
 	"Become a ruler of the galaxy through money. Buy trade routes, stocks, set up shops and entertainment centers, buy planets, hire a mercenary army, hunt down people who didn't pay back their loans....and more..Also includes an optional alternate pirate start, and additons to make piracy much more viable and fun.",
@@ -122,7 +132,7 @@ createMod(
 	"http://steamcommunity.com/app/404410/discussions/0/357287935542774456/#c357287935542779066",
 	"mini, troll, nukes, person, derpy, horse"
 	),
-	
+
 createMod(
 	"The Final Countdown",
 	'Storm Crow (With contributions from whatever band wrote "The Final Countdown)"',
