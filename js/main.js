@@ -91,7 +91,7 @@ function fetchMod(directoryName, number) {
 }
 
 function createModMetadataUrl(directoryName) {
-	return createModFolderUrl(directoryName) + "/_metadata.json";
+	return createModFolderUrl(directoryName) + "/metadata.json";
 }
 
 function createModThumbnailUrl(directoryName) {
