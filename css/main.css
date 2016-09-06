@@ -31,7 +31,6 @@
 .mod-preview {
 	border: 2px solid #040404;
 	cursor: pointer;
-	display: none;
 	max-height: 275px;
 	opacity: 1;
 	-webkit-transition: all 0.2s;
