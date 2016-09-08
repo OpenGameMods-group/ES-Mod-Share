@@ -27,7 +27,7 @@ function loadModList(modList) {
 // Insert a mod, and use the number to determine which col it goes in
 function displayMod(folderName, metadata, number) {
 	var col = "firstCol";
-	var titleNoS = (metadata.title).replace(/\s/g, '') + number;
+	var titleNoS = folderName.replace(/\s/g, '') + number;
 
 	var column = number % 3;
 	switch(column) {
@@ -67,7 +67,7 @@ function displayMod(folderName, metadata, number) {
 	if(contributors) {
 		modHTML += '<h4 class="mod-contributor">with help from ' + contributors + '</h4>';
 	}
-	
+
 	modHTML += '<p class="mod-description">' + metadata.description + '</p>' +
 					'<a type="button" class="btn btn-success" href="' + metadata.downloadLink + '" target="_blank">' +
 					'<span class="glyphicon glyphicon-download" aria-hidden="true"/> Download</a>' +
