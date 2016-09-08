@@ -46,8 +46,11 @@ function displayMod(folderName, metadata, number) {
 	// Create the html
 	var modHTML = '<div class="mod">' +
 					'<div class="mod-preview" data-toggle="modal" data-target="#' + titleNoS + '">' +
-					'<img class="preview-img" src="' + thumbnail + '" alt="' + metadata.title + '"' + 'onerror="this.onerror=null; this.src=\'img/web/github-mark.png\';"' + '>' +
-					'<h4 class="preview-title">' + metadata.title + '</h3>' +
+					'<div class="mod-preview-content">' +
+					'<img class="preview-img" src="' + thumbnail + '" alt="' + metadata.title + '"' +
+					'onerror="this.onerror=null; this.src=\'img/web/github-mark.png\';"' + '/>' +
+					'</div>' +
+					'<h4 class="preview-title">' + metadata.title + '</h4>' +
 					'</div>' +
 
 					'<div class="modal fade" id="' + titleNoS + '" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">' +
@@ -57,9 +60,9 @@ function displayMod(folderName, metadata, number) {
 					'<h2 class="mod-title">' + metadata.title + '</h2>' +
 					'<h3 class="mod-author">By ' + authors  + '</h3>' +
 					'<p class="mod-description">' + metadata.description + '</p>' +
-					'<a class="btn btn-success mod-btn" href="' + metadata.downloadLink + '" target="_blank">Download</a>' +
-					'<br>' +
-					'<a class="info-link" href="' + metadata.website + '" target="_blank">More Info</a>' +
+					'<a type="button" class="btn btn-success" href="' + metadata.downloadLink + '" target="_blank">' +
+					'<span class="glyphicon glyphicon-download" aria-hidden="true"/> Download</a>' +
+					'<a type="button" class="btn btn-default" style="margin-left: 20px" href="' + metadata.website + '" target="_blank">Website</a>' +
 					'<br>' +
 					'<span class="tags">Tags: </span><span class="mod-tags">' + metadata.tags.join(", ") + '</span>' +
 					'</div></div></div></div>';
