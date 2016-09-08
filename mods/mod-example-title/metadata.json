@@ -1,0 +1,15 @@
+{
+  "title": "Mod Example Title",
+  "author": [
+    "Example Author 1",
+    "Example Author 2"
+  ],
+  "contributors": ["contributor 1", "contributor 2"],
+  "description": "This is just an \"example\" inside the mods file so people can see how to add their own mod",
+  "downloadLink": "https://www.youtube.com/watch?v=32UGD0fV45g",
+  "website": "https://www.google.com/",
+  "tags": [
+    "example",
+    "example2"
+  ]
+}

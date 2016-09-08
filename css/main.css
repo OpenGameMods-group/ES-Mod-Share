@@ -1,11 +1,16 @@
+.top-wrap {
+    margin-top: 50px;
+}
+
 .title-main {
 	font-weight: bold;
 	cursor: pointer;
+    margin-top: 70px;
 }
 
 .search-wrap {
 	margin: 0 auto;
-	width: 60vw;
+	width: 30vw;
 }
 
 .search-input {
@@ -14,10 +19,11 @@
 }
 
 .mod {
-	background: #fff;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
-	margin-bottom: 5px;
-	margin-top: 5px;
+	padding-bottom: 15px;
+	padding-top: 15px;
 	text-align: center;
 	vertical-align: middle;
 }
@@ -25,10 +31,23 @@
 .mod-preview {
 	border: 2px solid #040404;
 	cursor: pointer;
-	display: none;
-	max-height: 275px;
+	height: 275px;
 	opacity: 1;
+	-webkit-transition: all 0.2s;
 	transition: all 0.2s;
+    /*position: relative;*/
+}
+
+.mod-preview-content {
+    height: 84%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  /*position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);*/
 }
 
 .mod-preview:hover {
@@ -40,6 +59,8 @@
 	display: block;
 	max-width: 100%;
 	max-height: 200px;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	margin: 0 auto;
 }
@@ -65,16 +86,21 @@
 	font-size: 16px;
 }
 
-.mod-btn {
-
-}
-
 .mod-tags {
 	font-size: 12px;
 }
 
 .tags {
 	font-size: 13px;
+}
+
+.glyphicon {
+    vertical-align: middle;
+    top: -1px;
+}
+
+btn-lg.glyphicon {
+    top: -2px;
 }
 
 .noselect {
