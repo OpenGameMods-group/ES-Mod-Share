@@ -68,11 +68,19 @@ function displayMod(folderName, metadata, number) {
 		modHTML += '<h4 class="mod-contributor">with help from ' + contributors + '</h4>';
 	}
 
-	modHTML += '<p class="mod-description">' + metadata.description + '</p>' +
-					'<a type="button" class="btn btn-success" href="' + metadata.downloadLink + '" target="_blank">' +
-					'<span class="glyphicon glyphicon-download" aria-hidden="true"/> Download</a>' +
-					'<a type="button" class="btn btn-default" style="margin-left: 20px" href="' + metadata.website + '" target="_blank">Website</a>' +
-					'<br>' +
+	modHTML += '<p class="mod-description">' + metadata.description + '</p>';
+
+	if(metadata.downloadLink) {
+		modHTML +=	'<a type="button" class="btn btn-success" style="margin-right: 20px" href="' + metadata.downloadLink +
+					'" target="_blank">' +
+					'<span class="glyphicon glyphicon-download" aria-hidden="true"/> Download</a>';
+	}
+
+	if(metadata.website) {
+		modHTML +=	'<a type="button" class="btn btn-default" href="' + metadata.website + '" target="_blank">Website</a>';
+	}
+
+	modHTML +=		'<br>' +
 					'<span class="tags">Tags: </span><span class="mod-tags">' + metadata.tags.join(", ") + '</span>' +
 					'</div></div></div></div>';
 
