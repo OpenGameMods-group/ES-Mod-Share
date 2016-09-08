@@ -1,6 +1,7 @@
 {
   "title": "The Final Countdown",
-  "author": ["Storm Crow", "Europe"],
+  "author": "Storm Crow",
+  "contributors": "Europe",
   "description": "Endless Sky except whenever a ship dies it plays a snippet of \"The Final Countdown\".",
   "thumbnail" : "https://rutgershonorsblog.files.wordpress.com/2015/11/final-countdown.jpg",
   "banner" : "https://rutgershonorsblog.files.wordpress.com/2015/11/final-countdown.jpg",
