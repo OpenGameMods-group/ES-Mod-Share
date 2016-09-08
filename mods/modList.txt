@@ -9,3 +9,6 @@ the-enclave
 ursa-polaris
 le-troll
 the-final-countdown
+adamas-project
+fallen
+quarg-retaliation
