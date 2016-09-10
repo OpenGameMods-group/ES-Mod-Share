@@ -16,7 +16,26 @@
 // Do I seperate with comas?
 //// Yes, but do not put a coma after the last value which is tags.
 // And include a coma after the last parenthesis like this createMod(),
+var modFolder = "mods";
+var metadataFilename = "metadata.json";
+var thumbnailFilename = "thumbnail.png";
+var bannerFilename = "banner.png";
 
-var modListPromise = $.ajax({
-		url: "mods/modList.txt"
-	});
+var deferred = $.Deferred();
+
+var modListPromise = deferred.promise();
+
+$(document).ready(function () {
+	var modList = $('#modList p').map(function () {
+		return $.trim($(this).text()
+		.replace(modFolder, "")
+		.replace(metadataFilename, "")
+		.replace(/\//g, ""));
+	}).get();
+	
+	deferred.resolve(modList);
+});
+
+// $.ajax({
+// 		url: "mods/modList.txt"
+// 	});

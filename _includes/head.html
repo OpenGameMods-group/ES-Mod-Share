@@ -1,0 +1,35 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A mod sharing website for Endless Sky">
+<meta name="author" content="Evan (@evan153 Github)">
+
+<title>{{ site.title }}</title>
+
+<!-- _includes/base.html -->
+{% assign base = '' %}
+{% assign depth = page.url | split: '/' | size | minus: 1 %}
+{% if    depth <= 1 %}{% assign base = '.' %}
+{% elsif depth == 2 %}{% assign base = '..' %}
+{% elsif depth == 3 %}{% assign base = '../..' %}
+{% elsif depth == 4 %}{% assign base = '../../..' %}{% endif %}
+
+<!-- Bootstrap -->
+<link href="{{base}}/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!-- Main CSS Theme -->
+<link href="{{base}}/css/main.css" rel="stylesheet">
+<!-- Custom Fonts -->
+<link href="{{base}}/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="{{base}}/img/web/sparrow.png">
+
+<!-- jQuery -->
+<script src="{{base}}/vendor/jquery/jquery.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="{{base}}/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!-- Main JavaScript -->
+<script src="{{base}}/js/mods.js"></script>
+<script src="{{base}}/js/main.js"></script>
+
+<script>
+    window.baseUrl = "{{ base }}";
+</script>

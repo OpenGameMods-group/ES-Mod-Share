@@ -1,8 +1,7 @@
 var theme = "light";
 
 $(document).ready(function(){
-	modListPromise.done(function(modListText) {
-		var modList = modListText.trim().split("\n");
+	modListPromise.done(function(modList) {
 		var modCount = modList.length;
 		$('#loadText').text("There is a total of " + modCount + " mods");
 		loadModList(modList);
@@ -111,17 +110,17 @@ function fetchMod(directoryName, number) {
 }
 
 function createModMetadataUrl(directoryName) {
-	return createModFolderUrl(directoryName) + "/metadata.json";
+	return createModFolderUrl(directoryName) + "/" + metadataFilename;
 }
 
 function createModThumbnailUrl(directoryName) {
-	return createModFolderUrl(directoryName) + "/thumbnail.png";
+	return createModFolderUrl(directoryName) + "/" + thumbnailFilename;
 }
 
 function createModBannerUrl(directoryName) {
-	return createModFolderUrl(directoryName) + "/banner.png";
+	return createModFolderUrl(directoryName) + "/" + bannerFilename;
 }
 
 function createModFolderUrl(directoryName) {
-	return "mods/" + directoryName;
+	return window.baseUrl + "/" + modFolder + "/" + directoryName;
 }
