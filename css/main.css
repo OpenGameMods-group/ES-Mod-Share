@@ -35,7 +35,7 @@
 	opacity: 1;
 	-webkit-transition: all 0.2s;
 	transition: all 0.2s;
-    /*position: relative;*/
+    position: relative;
 }
 
 .mod-preview-content {
@@ -44,8 +44,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  /*position: absolute;
-  top: 50%;
+  	position: absolute;
+  /*top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);*/
 }
@@ -67,6 +67,12 @@
 
 .preview-title {
 	font-weight: 400;
+	position: absolute;
+	bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
 }
 
 .mod-content {
