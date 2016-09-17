@@ -26,14 +26,11 @@ var deferred = $.Deferred();
 var modListPromise = deferred.promise();
 
 $(document).ready(function () {
-	var modList = $('#modList p').map(function () {
-		return $.trim($(this).text()
-		.replace(modFolder, "")
-		.replace(metadataFilename, "")
-		.replace(/\//g, ""));
-	}).get();
+	$.getJSON("mods-json.html", function(data) {
+		deferred.resolve(data.mods);
+	});
+	// var modList = JSON.parse($('#modList').text());
 	
-	deferred.resolve(modList);
 });
 
 // $.ajax({

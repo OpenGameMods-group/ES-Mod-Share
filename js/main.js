@@ -9,24 +9,18 @@ $(document).ready(function(){
 	});
 });
 
-function loadModList(modList) {
-	$(modList.reverse()).each(function(i) {
-			var folderName = modList[i];
-
-			fetchMod(folderName, i)
-				.done(function(metadata) {
-					displayMod(folderName, metadata, i);
-				})
-				.error(function(jqXHR, textStatus, errorThrown) {
-					console.error(errorThrown);
-				});
+function loadModList(mods) {
+	$(mods).each(function(i, mod) {
+			displayMod(mod, i);
 	});
 }
 
 // Insert a mod, and use the number to determine which col it goes in
-function displayMod(folderName, metadata, number) {
+function displayMod(mod, number) {
+	var id = mod.id;
+	var metadata = mod.metadata;
 	var col = "firstCol";
-	var titleNoS = folderName.replace(/\s/g, '') + number;
+	var titleNoS = id.replace(/\s/g, '') + number;
 
 	var column = number % 3;
 	switch(column) {
@@ -43,8 +37,8 @@ function displayMod(folderName, metadata, number) {
 
 	var authors = Array.isArray(metadata.author) ? metadata.author.join(", ") : metadata.author;
 	var contributors = Array.isArray(metadata.contributors) ? metadata.contributors.join(", ") : metadata.contributors;
-	var thumbnail = metadata.thumbnail ? metadata.thumbnail : createModThumbnailUrl(folderName);
-	var banner = metadata.banner ? metadata.banner : createModBannerUrl(folderName);
+	var thumbnail = metadata.thumbnail ? metadata.thumbnail : createModThumbnailUrl(id);
+	var banner = metadata.banner ? metadata.banner : createModBannerUrl(id);
 
 	// Create the html
 	var modHTML = '<div class="mod">' +

@@ -1,0 +1,9 @@
+---
+---
+{ "mods" : [ {% 
+    for mod in site.mods %}
+        {{ mod }}{% 
+        if forloop.last == false %}, {% 
+        endif %} {% 
+    endfor %}
+]}

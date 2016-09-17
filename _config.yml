@@ -26,3 +26,14 @@ url: "https://evan153.github.io" # the base hostname & protocol for your site
 # Build settings
 markdown: kramdown
 theme: minima
+
+collections:
+  mods:
+    output: true
+
+defaults:
+  -
+    scope:
+      type: mods
+    values:
+      layout: metadata-template

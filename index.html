@@ -1,5 +1,5 @@
----
-layout: default
+--- 
+layout: default 
 ---
 <!-- Top Section -->
 <div class="top-wrap">
@@ -12,6 +12,7 @@ layout: default
 					<button class="btn btn-primary" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
 				</span>
         </div>
+                <!--<a id="upload-button" class="btn btn-primary" href="https://github.com/evan153/ES-Mod-Share/blob/gh-pages/README.md"><span class="glyphicon glyphicon-upload"/>Upload Addon</a>-->
     </div>
 
 </div>
@@ -27,12 +28,4 @@ layout: default
     </div>
 </div>
 
-<div id="modList" hidden>   
-{% for mod in site.static_files %}
-    {% if mod.path contains '/mods/' and mod.path contains '/metadata.json' %}
-<p>{{ mod.path }}</p>
-    {% endif %}
-{% endfor %}
-
-</div>
 <!-- End Mid Section / Mod displays -->

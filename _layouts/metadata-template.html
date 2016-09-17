@@ -1,0 +1,21 @@
+{% assign split-mod-path = page.path | split:'/' %} {% 
+assign mod-path = "mods/" | append: split-mod-path[1] | append: "/" %}{% 
+assign bannerPrefix = page.banner | slice: 0, 5 %}{% 
+assign bannerAfterPrefix = page.banner | slice: 5, 999 %}{% 
+assign thumbnailPrefix = page.thumbnail | slice: 0, 5 %}{% 
+assign thumbnailAfterPrefix = page.thumbnail | slice: 5, 999 %}
+{
+    "id" : "{{ page.mod-id }}",
+    "metadata" : 
+        {
+        "title": {{page.title | jsonify}},
+        "author": {{page.author | jsonify}},
+        "contributors": {{page.contributors | jsonify}},
+        "description": {{page.description | jsonify}},
+        "thumbnail" : {{ page.thumbnail | replace: 'local:', mod-path | jsonify }},
+        "banner" : {{ page.banner | replace: 'local:', mod-path | jsonify }},
+        "downloadLink": {{page.downloadLink | jsonify}},
+        "website": {{page.website | jsonify}},
+        "tags": {{page.tags | jsonify}}
+        }
+}

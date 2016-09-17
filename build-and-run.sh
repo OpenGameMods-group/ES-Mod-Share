@@ -1,2 +1,2 @@
 #!/bin/bash
-bundle exec jekyll serve
+gnome-terminal -e 'bundle exec jekyll serve'  &

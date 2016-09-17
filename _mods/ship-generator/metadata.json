@@ -1,0 +1,16 @@
+---
+mod-id: ship-generator
+title: Ship Generator
+author: Legolas
+description: Ever wanted to easily create ships? (as if it's not already easy) Well,
+  now you can! I created a simple tool that will generate the code for a ship.
+thumbnail: local:thumbnail.png
+banner: local:banner.png
+downloadLink: https://evan153.github.io/Endless-Sky-Ship-Generator/
+website: https://steamcommunity.com/sharedfiles/filedetails/?id=718279752
+tags:
+- tool
+- ship
+- code
+- modding
+---
