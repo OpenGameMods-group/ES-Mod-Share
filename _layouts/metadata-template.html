@@ -9,6 +9,8 @@ assign thumbnailAfterPrefix = page.thumbnail | slice: 5, 999 %}
     "metadata" : 
         {
         "title": {{page.title | jsonify}},
+        "version": {{page.version | jsonify}},
+        "lastUpdated": {{page.lastUpdated | jsonify}},
         "author": {{page.author | jsonify}},
         "contributors": {{page.contributors | jsonify}},
         "description": {{page.description | jsonify}},

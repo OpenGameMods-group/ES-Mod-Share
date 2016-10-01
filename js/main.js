@@ -62,11 +62,15 @@ function displayMod(mod, number) {
 					'<div class="modal-dialog modal-lg" role="document">' +
 					'<div class="modal-content mod-content">' +
 					'<img class="mod-img" src="' + banner + '" alt="' + metadata.title + '"' + 'onerror="this.onerror=null; this.src=\'img/web/github-mark.png\';"' + '>' +
-					'<h2 class="mod-title">' + metadata.title + '</h2>' +
+					'<h2 class="mod-title">' + metadata.title + '</h2>' + 
 					'<h3 class="mod-author">By ' + authors  + '</h3>';
 
 	if(contributors) {
 		modHTML += '<h4 class="mod-contributor">with help from ' + contributors + '</h4>';
+	}
+
+	if(metadata.version) {
+		modHTML += 'v' + metadata.version;
 	}
 
 	modHTML += '<p class="mod-description">' + metadata.description + '</p>';
@@ -79,6 +83,11 @@ function displayMod(mod, number) {
 
 	if(metadata.website) {
 		modHTML +=	'<a type="button" class="btn btn-default mod-website" href="' + metadata.website + '" target="_blank">Website</a>';
+	}
+
+	if(metadata.lastUpdated) {
+		var date = new Date(metadata.lastUpdated);
+		modHTML += '<div title="' + date.toLocaleDateString() + '">Last updated: ' + jQuery.format.prettyDate(date) + '</div>';
 	}
 
 	modHTML +=		'<br>' +
