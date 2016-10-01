@@ -1,11 +1,15 @@
 var theme = "light";
+var modListObj;
 
 $(document).ready(function(){
-	modListPromise.done(function(modList) {
+	dataPromise.done(function(data) {
+		var modList = data.mods;
 		var modCount = modList.length;
-		$('#loadText').text("There is a total of " + modCount + " mods");
+		console.debug("Loaded " + modCount + " mods");
 		loadModList(modList);
 		$('.mod-preview').show();
+
+		loadTags(data.tags);
 	});
 });
 
@@ -13,27 +17,31 @@ function loadModList(mods) {
 	$(mods).each(function(i, mod) {
 			displayMod(mod, i);
 	});
+
+	var options = {
+		valueNames: [ 'mod-title', 'mod-tags', 'mod-author', 'mod-contributor' ]
+	}
+
+	modListObj = new List('modsDiv', options);
 }
 
-// Insert a mod, and use the number to determine which col it goes in
+function loadTags(tags) {
+	tags.forEach(function(tag) {
+		$("#left-sidebar ul").append("<li class='tag'><span class='tag-icon' />" + tag + "</li>");
+	})
+
+	$("#tagsList .tag").click(function(item) {
+		var tag = $(this).text();
+		$("#modSearch").val(tag);
+		modListObj.search(tag);
+	});
+}
+
+// Insert a mod, and use the number to determine which position it goes in
 function displayMod(mod, number) {
 	var id = mod.id;
 	var metadata = mod.metadata;
-	var col = "firstCol";
 	var titleNoS = id.replace(/\s/g, '') + number;
-
-	var column = number % 3;
-	switch(column) {
-		case 0:
-			col = "firstCol";
-			break;
-	 case 1:
-			col = "secondCol";
-			break;
-	 case 2:
-			col = "thirdCol";
-			break;
-	}
 
 	var authors = Array.isArray(metadata.author) ? metadata.author.join(", ") : metadata.author;
 	var contributors = Array.isArray(metadata.contributors) ? metadata.contributors.join(", ") : metadata.contributors;
@@ -41,8 +49,8 @@ function displayMod(mod, number) {
 	var banner = metadata.banner ? metadata.banner : createModBannerUrl(id);
 
 	// Create the html
-	var modHTML = '<div class="mod">' +
-					'<div class="mod-preview" data-toggle="modal" data-target="#' + titleNoS + '">' +
+	var modHTML = '<li><div class="mod">' +
+					'<div class="mod-preview mdl-card mdl-shadow--2dp" data-toggle="modal" data-target="#' + titleNoS + '">' +
 					'<div class="mod-preview-content">' +
 					'<img class="preview-img" src="' + thumbnail + '" alt="' + metadata.title + '"' +
 					'onerror="this.onerror=null; this.src=\'img/web/github-mark.png\';"' + '/>' +
@@ -64,21 +72,21 @@ function displayMod(mod, number) {
 	modHTML += '<p class="mod-description">' + metadata.description + '</p>';
 
 	if(metadata.downloadLink) {
-		modHTML +=	'<a type="button" class="btn btn-success" style="margin-right: 20px" href="' + metadata.downloadLink +
+		modHTML +=	'<a type="button" class="btn btn-success mod-downloadLink" style="margin-right: 20px" href="' + metadata.downloadLink +
 					'" target="_blank">' +
 					'<span class="glyphicon glyphicon-download" aria-hidden="true"/> Download</a>';
 	}
 
 	if(metadata.website) {
-		modHTML +=	'<a type="button" class="btn btn-default" href="' + metadata.website + '" target="_blank">Website</a>';
+		modHTML +=	'<a type="button" class="btn btn-default mod-website" href="' + metadata.website + '" target="_blank">Website</a>';
 	}
 
 	modHTML +=		'<br>' +
 					'<span class="tags">Tags: </span><span class="mod-tags">' + metadata.tags.join(", ") + '</span>' +
-					'</div></div></div></div>';
+					'</div></div></div></div></li>';
 
 	// Append it to the list
-	$('#' + col).append(modHTML);
+	$("#modsList").append(modHTML);
 }
 
 function switchTheme() {

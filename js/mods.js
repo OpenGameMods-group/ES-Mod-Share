@@ -23,11 +23,11 @@ var bannerFilename = "banner.png";
 
 var deferred = $.Deferred();
 
-var modListPromise = deferred.promise();
+var dataPromise = deferred.promise();
 
 $(document).ready(function () {
 	$.getJSON("mods-json.html", function(data) {
-		deferred.resolve(data.mods);
+		deferred.resolve(data);
 	});
 	// var modList = JSON.parse($('#modList').text());
 	

@@ -1,30 +1,32 @@
 --- 
 layout: default 
 ---
-<!-- Top Section -->
-<div class="top-wrap">
-    <h1 class="text-center title-main noselect" onclick="switchTheme()">{{ site.title }}</h1>
 
-    <div class="form-group search-wrap">
-        <div class="input-group">
-            <input class="search-input form-control" type="text" name="search" placeholder="Search tags or mod name">
-            <span class="input-group-btn">
-					<button class="btn btn-primary" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
-				</span>
-        </div>
-                <!--<a id="upload-button" class="btn btn-primary" href="https://github.com/evan153/ES-Mod-Share/blob/gh-pages/README.md"><span class="glyphicon glyphicon-upload"/>Upload Addon</a>-->
+
+<div id="midWrap">
+    <div id="left-sidebar">
+        <h4 id="tagsTitle">
+            Tags
+        </h4>
+        <ul id="tagsList">
+        </ul>
     </div>
 
-</div>
-<!-- End Top Section -->
-<hr>
-<!-- Mid Section / Mod displays -->
-<div class="mid-wrap">
-    <h3 id="loadText" class="text-center">Loading mods...</h3>
-    <div class="row">
-        <div class="col-sm-3 col-sm-offset-1" id="firstCol"></div>
-        <div class="col-sm-3" id="secondCol"></div>
-        <div class="col-sm-3" id="thirdCol"></div>
+
+    <div id="modsDiv" class="row">
+        <div id="titleDiv">
+            <h1 id="title-main" class="noselect" onclick="switchTheme()">{{ site.title }}</h1>
+            <div id="searchField" class="form-group search-wrap">
+                <div class="input-group">
+                    <input id="modSearch" class="search search-input form-control" type="text" name="search" placeholder="Search by title, tags, or author">
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </span>
+                </div>
+                <!--<a id="upload-button" class="btn btn-primary" href="https://github.com/evan153/ES-Mod-Share/blob/gh-pages/README.md"><span class="glyphicon glyphicon-upload"/>Upload Addon</a>-->
+            </div>
+        </div>
+        <ul id="modsList" class="list"></ul>
     </div>
 </div>
 
