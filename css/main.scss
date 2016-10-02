@@ -1,5 +1,5 @@
---- 
---- 
+---
+---
 {% assign base = '' %}
 {% assign depth = page.url | split: '/' | size | minus: 1 %}
 {% if    depth <= 1 %}{% assign base = '.' %}
@@ -42,7 +42,7 @@
 ul {
 	padding: 0;
 	margin: 0;
-	list-style-type: none; 
+	list-style-type: none;
 	margin-left: 0px;
 }
 
@@ -164,10 +164,17 @@ btn-lg.glyphicon {
     user-select: none;
 }
 
+#leftSidebarContainer {
+	overflow: hidden;
+	position: fixed;
+	width: 240px;
+}
+
 #left-sidebar {
-    position: absolute;
-    left: 0;
-    width: 240px;
+	overflow-x: hidden;
+	overflow-y: auto;
+  left: 0;
+  width: 100%;
 	background-color: #222;
 	padding-top: 15px;
 	padding-bottom: 15px;
@@ -181,7 +188,7 @@ btn-lg.glyphicon {
 		color: white;
 	}
 
-	#tagsList {		
+	#tagsList {
 		display: block;
 		color: white;
 

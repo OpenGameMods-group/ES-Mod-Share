@@ -11,6 +11,9 @@ $(document).ready(function(){
 
 		loadTags(data.tags);
 	});
+
+	setLeftSidebarHeight();
+	window.addEventListener('resize', setLeftSidebarHeight);
 });
 
 function loadModList(mods) {
@@ -34,6 +37,7 @@ function loadTags(tags) {
 		var tag = $(this).text();
 		$("#modSearch").val(tag);
 		modListObj.search(tag);
+		window.scrollTo(0,0);
 	});
 }
 
@@ -62,7 +66,7 @@ function displayMod(mod, number) {
 					'<div class="modal-dialog modal-lg" role="document">' +
 					'<div class="modal-content mod-content">' +
 					'<img class="mod-img" src="' + banner + '" alt="' + metadata.title + '"' + 'onerror="this.onerror=null; this.src=\'img/web/github-mark.png\';"' + '>' +
-					'<h2 class="mod-title">' + metadata.title + '</h2>' + 
+					'<h2 class="mod-title">' + metadata.title + '</h2>' +
 					'<h3 class="mod-author">By ' + authors  + '</h3>';
 
 	if(contributors) {
@@ -134,4 +138,13 @@ function createModBannerUrl(directoryName) {
 
 function createModFolderUrl(directoryName) {
 	return window.baseUrl + "/" + modFolder + "/" + directoryName;
+}
+
+function setLeftSidebarHeight() {
+	var height = document.querySelector('html').clientHeight;
+	var sidebarContainer = document.querySelector('#leftSidebarContainer');
+	var sidebar = sidebarContainer.querySelector('#left-sidebar');
+
+	sidebarContainer.style.height = '' + height + 'px';
+	sidebar.style.height = '' + (height - 50) + 'px';
 }
