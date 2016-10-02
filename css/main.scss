@@ -1,17 +1,19 @@
---- 
---- 
+---
+---
 {% assign base = '' %}
 {% assign depth = page.url | split: '/' | size | minus: 1 %}
 {% if    depth <= 1 %}{% assign base = '.' %}
 {% elsif depth == 2 %}{% assign base = '..' %}
 {% elsif depth == 3 %}{% assign base = '../..' %}
 {% elsif depth == 4 %}{% assign base = '../../..' %}{% endif %}
-#navMain ul {
-	font-size: 15px;
+
+body {
+	padding-top: 50px;
+	overflow: hidden;
 }
 
-#midWrap {
-	margin-top: 50px;
+#navMain ul {
+	font-size: 15px;
 }
 
 #titleDiv  {
@@ -35,14 +37,24 @@
 	}
 }
 
+#mods-div-container {
+	height: 100%;
+	overflow-y: auto;
+	padding-top: 50px;
+}
+
 #modsDiv {
-    margin-left: 250px;
+	position: relative;
+	height: 100%;
+	overflow-y: auto;
+	padding: 0px 15px;
+  margin-left: 250px;
 }
 
 ul {
 	padding: 0;
 	margin: 0;
-	list-style-type: none; 
+	list-style-type: none;
 	margin-left: 0px;
 }
 
@@ -164,10 +176,29 @@ btn-lg.glyphicon {
     user-select: none;
 }
 
-#left-sidebar {
+.wrapper {
+    min-height: 100%;
+    height: 100%;
+    width: 100%;
     position: absolute;
-    left: 0;
-    width: 240px;
+    top: 0px;
+    left: 0px;
+}
+
+#left-sidebar-container {
+	position: fixed;
+	height: 100%;
+	width: 240px;
+  padding-top: 50px;
+}
+
+#left-sidebar {
+	position: relative;
+	overflow-x: hidden;
+	overflow-y: auto;
+  left: 0;
+	height: 100%;
+  width: 100%;
 	background-color: #222;
 	padding-top: 15px;
 	padding-bottom: 15px;
@@ -181,7 +212,7 @@ btn-lg.glyphicon {
 		color: white;
 	}
 
-	#tagsList {		
+	#tagsList {
 		display: block;
 		color: white;
 

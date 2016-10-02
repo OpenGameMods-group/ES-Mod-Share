@@ -62,7 +62,7 @@ function displayMod(mod, number) {
 					'<div class="modal-dialog modal-lg" role="document">' +
 					'<div class="modal-content mod-content">' +
 					'<img class="mod-img" src="' + banner + '" alt="' + metadata.title + '"' + 'onerror="this.onerror=null; this.src=\'img/web/github-mark.png\';"' + '>' +
-					'<h2 class="mod-title">' + metadata.title + '</h2>' + 
+					'<h2 class="mod-title">' + metadata.title + '</h2>' +
 					'<h3 class="mod-author">By ' + authors  + '</h3>';
 
 	if(contributors) {
