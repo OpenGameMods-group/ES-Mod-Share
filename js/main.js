@@ -11,9 +11,6 @@ $(document).ready(function(){
 
 		loadTags(data.tags);
 	});
-
-	setLeftSidebarHeight();
-	window.addEventListener('resize', setLeftSidebarHeight);
 });
 
 function loadModList(mods) {
@@ -37,7 +34,6 @@ function loadTags(tags) {
 		var tag = $(this).text();
 		$("#modSearch").val(tag);
 		modListObj.search(tag);
-		window.scrollTo(0,0);
 	});
 }
 
@@ -138,13 +134,4 @@ function createModBannerUrl(directoryName) {
 
 function createModFolderUrl(directoryName) {
 	return window.baseUrl + "/" + modFolder + "/" + directoryName;
-}
-
-function setLeftSidebarHeight() {
-	var height = document.querySelector('html').clientHeight;
-	var sidebarContainer = document.querySelector('#leftSidebarContainer');
-	var sidebar = sidebarContainer.querySelector('#left-sidebar');
-
-	sidebarContainer.style.height = '' + height + 'px';
-	sidebar.style.height = '' + (height - 50) + 'px';
 }
