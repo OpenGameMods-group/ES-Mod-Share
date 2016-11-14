@@ -1,5 +1,5 @@
 {% assign split-mod-path = page.path | split:'/' %} {% 
-assign mod-path = "mods/" | append: split-mod-path[1] | append: "/" %}{% 
+assign mod-path = "plugins/" | append: split-mod-path[1] | append: "/" %}{% 
 assign bannerPrefix = page.banner | slice: 0, 5 %}{% 
 assign bannerAfterPrefix = page.banner | slice: 5, 999 %}{% 
 assign thumbnailPrefix = page.thumbnail | slice: 0, 5 %}{% 

@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Endless Sky Mods
+title: Endless Sky Plugins
 #email: your-email@domain.com
 description: >
   Endless Sky is a 2D space trading and combat game similar to the classic Escape Velocity series. 
@@ -28,12 +28,12 @@ markdown: kramdown
 theme: minima
 
 collections:
-  mods:
+  plugins:
     output: true
 
 defaults:
   -
     scope:
-      type: mods
+      type: plugins
     values:
       layout: metadata-template

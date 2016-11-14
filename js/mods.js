@@ -16,7 +16,7 @@
 // Do I seperate with comas?
 //// Yes, but do not put a coma after the last value which is tags.
 // And include a coma after the last parenthesis like this createMod(),
-var modFolder = "mods";
+var modFolder = "plugins";
 var metadataFilename = "metadata.json";
 var thumbnailFilename = "thumbnail.png";
 var bannerFilename = "banner.png";
@@ -26,7 +26,7 @@ var deferred = $.Deferred();
 var dataPromise = deferred.promise();
 
 $(document).ready(function () {
-	$.getJSON("mods-json.html", function(data) {
+	$.getJSON("plugins-json.html", function(data) {
 		deferred.resolve(data);
 	});
 	// var modList = JSON.parse($('#modList').text());

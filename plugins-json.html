@@ -1,13 +1,13 @@
 ---
 ---
 {% capture allTags %}{% 
-for mod in site.mods %}{{ mod.tags | join: ","}},{% endfor %}{% 
+for mod in site.plugins %}{{ mod.tags | join: ","}},{% endfor %}{% 
 endcapture %}
 { 
   "tags" : {{ allTags| downcase | split: "," | uniq | sort | jsonify }},
   
   "mods" : [ {% 
-    for mod in site.mods %}{{ mod }}{% 
+    for mod in site.plugins %}{{ mod }}{% 
         if forloop.last == false %}, {% 
         endif %} {% 
     endfor %}
