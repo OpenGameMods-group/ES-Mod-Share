@@ -3,7 +3,8 @@
 ### About
 ES Plugin Share is a plugin sharing website for [Endless Sky](http://endless-sky.github.io/)
 
-Website: https://evan153.github.io/ES-Mod-Share/
+// Note: I changed my name to CodeDraken so replace it with any links that are evan153. Eventually this should be moved or an offical one should be created on the main Endless Sky website.
+Website: https://codedraken.github.io/ES-Mod-Share/
 
 ### Installing plugins
 Generally, installing a plugin is as simple as dropping it into the Endless Sky `plugin` folder for your operating system, specified here: https://github.com/endless-sky/endless-sky/wiki/CreatingPlugins.
