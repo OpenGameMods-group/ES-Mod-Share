@@ -3,7 +3,7 @@
 ### About
 ES Plugin Share is a plugin sharing website for [Endless Sky](http://endless-sky.github.io/)
 
-* Note: I changed my name to CodeDraken so replace any links that are evan153. Eventually this should be moved or an offical one should be created on the main Endless Sky website.*
+* Note: I changed my name to CodeDraken so replace any links that are evan153. Eventually this should be moved or an offical one should be created on the main Endless Sky website.
 
 Website: https://codedraken.github.io/ES-Mod-Share/
 
