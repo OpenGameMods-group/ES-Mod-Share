@@ -20,8 +20,8 @@ However, some plugins may have issues with other ones, so be sure to read each p
     - The **thumbnail** is a small image that represents your plugin in the list. 
     - The **banner** is larger and shown when your plugin is being viewed by the user.
 
-Finally, make a pull request!
+Finally, make a [pull request](https://help.github.com/articles/creating-a-pull-request/)!
 
 Note: The data format for the plugin data is YAML, but it is processed to json, which is why it has the json file extension.
 
-All plugin data is available in json format at https://codedraken.github.io/ES-Mod-Share/mods-json.html.
+All plugin data is available in json format at https://codedraken.github.io/ES-Mod-Share/plugins-json.html.
