@@ -5,7 +5,7 @@ ES Plugin Share is a plugin sharing website for [Endless Sky](http://endless-sky
 
 * Note: I changed my name to CodeDraken so replace any links that are evan153. Eventually this should be moved or an offical one should be created on the main Endless Sky repo.
 
-[Go to the website](https://codedraken.github.io/ES-Mod-Share/)
+[Go to the website](https://OpenGameMods-group.github.io/ES-Mod-Share/)
 
 ### Installing plugins
 Generally, installing a plugin is as simple as dropping it into the Endless Sky `plugin` folder for your operating system, specified here: https://github.com/endless-sky/endless-sky/wiki/CreatingPlugins.
@@ -26,4 +26,4 @@ However, some plugins may have issues with other ones, so be sure to read each p
 
 Note: The data format for the plugin data is YAML, but it is processed to json, which is why it has the json file extension.
 
-All plugin data is available in json format at https://codedraken.github.io/ES-Mod-Share/plugins-json.html.
+All plugin data is available in json format at https://OpenGameMods-group.github.io/ES-Mod-Share/plugins-json.html.
