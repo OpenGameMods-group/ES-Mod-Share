@@ -1,0 +1,16 @@
+---
+mod-id: hand-to-hand-outfits
+title: hand-to-hand outfits
+author:
+- Timothy Butterworth
+contributors:
+- None
+description: This Plug-in adds additional hand-to-hand outfits. 
+thumbnail: local:thumbnail.png
+banner: local:banner.png
+downloadLink: https://github.com/tmbutterworth/hand-to-hand-outfits
+website: https://github.com/tmbutterworth/hand-to-hand-outfits
+tags:
+- hand-to-hand
+- outfits
+---
