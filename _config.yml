@@ -21,7 +21,7 @@ description: >
   Use your earnings to buy a better ship or to upgrade the weapons and engines on your current one. 
   Blow up pirates. Take sides in a civil war. Or leave human space behind and hope to find friendly aliens whose culture is more civilized than your own.
 #baseurl: "/ES-Mod-Share" # the subpath of your site, e.g. /blog
-url: "https://evan153.github.io" # the base hostname & protocol for your site
+url: "https://opengamemods-group.github.io" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
