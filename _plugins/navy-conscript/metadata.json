@@ -1,0 +1,16 @@
+---
+mod-id: navy-conscript
+title: navy conscript
+author:
+- Example Timothy Butterworth
+contributors:
+- contributors wanted
+description: This Plug-in provides an alternate story plot to the main story plot allowing the player to join The Republic Navy as a conscript instead of joining the free worlds militia.
+thumbnail: local:thumbnail.png
+banner: local:banner.png
+downloadLink: https://github.com/tmbutterworth/navy-conscript
+website: https://github.com/tmbutterworth/navy-conscript
+tags:
+- wip
+- Navy
+---
