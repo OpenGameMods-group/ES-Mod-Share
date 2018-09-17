@@ -1,0 +1,16 @@
+---
+mod-id: pilots-license
+title: Pilot's License
+author:
+- Example Timothy Butterworth
+contributors:
+- None
+description: A small plug-in to implement the Pilot's License. All ships that used to not have a license restriction now require a Pilot's License to purchase them.
+thumbnail: local:thumbnail.png
+banner: local:banner.png
+downloadLink: https://github.com/tmbutterworth/pilots-license
+website: https://github.com/tmbutterworth/pilots-license
+tags:
+- Lore
+- Game Play
+---
