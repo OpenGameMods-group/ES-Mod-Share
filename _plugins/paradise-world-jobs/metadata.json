@@ -1,0 +1,15 @@
+---
+mod-id: paradise-world-jobs
+title: Paradise world jobs
+author:
+- Timothy Butterworth
+contributors:
+- wanted
+description: This plug-in adds additional paradise world jobs to the game increasing variety.
+thumbnail: local:thumbnail.png
+banner: local:banner.png
+downloadLink: https://github.com/tmbutterworth/paradise-world-jobs
+website: https://github.com/tmbutterworth/paradise-world-jobs
+tags:
+- jobs
+---
