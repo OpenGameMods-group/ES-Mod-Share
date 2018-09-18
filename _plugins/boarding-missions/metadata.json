@@ -1,0 +1,16 @@
+---
+mod-id: boarding-missions
+title: Boarding Missions
+author:
+- Timothy Butterworth
+contributors:
+- Wanted
+description: This plug-in adds additional boarding missions to the game increasing the chances for a player to receive a payment for assisting a disabled ship.
+thumbnail: local:thumbnail.png
+banner: local:banner.png
+downloadLink: https://github.com/tmbutterworth/boarding-missions
+website: https://github.com/tmbutterworth/boarding-missions
+tags:
+- Boarding
+- Missions
+---
