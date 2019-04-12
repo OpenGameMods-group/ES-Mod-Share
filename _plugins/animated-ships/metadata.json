@@ -3,8 +3,7 @@ mod-id: animated-ships
 title: Animated ships!
 author:
 - Becca Tommaso
-description: Have you ever looked at the game ships and thought that they looked a bit boring?
-Well, now you won't never have that feeling any more!
+description: Have you ever looked at the game ships and thought that they looked a bit boring? Well, now you won't never have that feeling any more!
 thumbnail: local:thumbnail.png
 banner: local:banner.png
 downloadLink: https://github.com/beccabunny/Animated-ships
