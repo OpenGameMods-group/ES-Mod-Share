@@ -1,0 +1,19 @@
+---
+mod-id: better-vanilla-pirates
+title: Better Vanilla Pirates
+author:
+- ZBok
+contributors:
+- ZBok
+description: Do you love vanilla ES but wish that the human pirates, bounty hunters and repeating pirate combat missions (spaceport + job board), were a little more interesting, and stayed challenging with worthwhile payouts even in the late game? This plugin makes several improvements and additions to pirates and pirate combat in Human space, whilst maintaining a completely vanilla feel. 30+ new pirate combat missions, more pirate variety and pirate tech progression. It does not contain any new weapons/ships/sprites, or any new or replacement storylines, nor does it make the early game any harder. Please check the download link for a full readme.
+thumbnail: local:thumbnail.png
+banner: local:banner.png
+downloadLink: https://github.com/ZBok/BetterVanillaPirates
+website: https://github.com/ZBok/BetterVanillaPirates
+tags:
+- Pirates
+- Combat
+- Missions
+- Human
+- Vanilla
+---
