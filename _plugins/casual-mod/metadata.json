@@ -3,13 +3,9 @@ mod-id: casual-mod
 title: "Casual Mod"
 author: "<a href=\"https://github.com/pphotography\">PPhoto</a>"
 contributors: "Myself for gamedata, <a href=\"https://github.com/Wrzlprnft\">Wrzlprnft</a> (Maximilian Korber) for ship graphics"
-description: "Makes gameplay more casual
-- Ships are heavier making navigation and combat slower
-- Higher range for some cannons to compensate ship speed
-- Less, slower and weaker asteroids to increase clarity, FPS and easier mining"
-- Bigger sprites for bigger ships
-thumbnail : https://raw.githubusercontent.com/pphotography/EndlessSky_CasualMod/gh-pages/casualmod_logo.png
-banner : https://raw.githubusercontent.com/pphotography/EndlessSky_CasualMod/gh-pages/casualmod_logo.png
+description: "Makes gameplay more casual"
+thumbnail : "https://raw.githubusercontent.com/pphotography/EndlessSky_CasualMod/gh-pages/casualmod_logo.png"
+banner : "https://raw.githubusercontent.com/pphotography/EndlessSky_CasualMod/gh-pages/casualmod_logo.png"
 downloadLink: "https://github.com/pphotography/EndlessSky_CasualMod/releases"
 website: "https://github.com/pphotography/EndlessSky_CasualMod"
 tags: 
