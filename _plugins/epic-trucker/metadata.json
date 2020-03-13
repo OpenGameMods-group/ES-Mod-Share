@@ -1,0 +1,22 @@
+---
+mod-id: epic-trucker
+title: Epic Trucker
+author:
+- Brian Deale
+contributors:
+- Pexels open images
+description: This plug-in adds additional cargo and passanger (and both at once) missions to the game increasing the scale and scope for a player who wants to focus on running a huge trucker shipping delivery and passenger service.
+thumbnail: local:thumbnail.png
+banner: local:banner.png
+downloadLink: https://github.com/KelvallRogers/epic-trucker/releases
+website: https://github.com/KelvallRogers/epic-trucker
+tags:
+- passenger
+- cargo
+- trucker
+- missions
+- jobs
+- vanilla
+- save-compatible
+- epic
+---
