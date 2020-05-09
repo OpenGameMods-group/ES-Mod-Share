@@ -1,9 +1,10 @@
 # Endless Sky Plugin Share
 
+## Deprecation Note
+This list is no longer being maintained or developed (in favor of a more official mod manager). You can still submit mods but it can take up to 1-2 weeks for it to be added. As the mod manager is not being developed by us, you'll need to ask on the Endless Sky Discord server for details and updates about it.
+
 ### About
 ES Plugin Share is a plugin sharing website for [Endless Sky](http://endless-sky.github.io/)
-
-* Note: I changed my name to CodeDraken so replace any links that are evan153. Eventually this should be moved or an offical one should be created on the main Endless Sky repo.
 
 [Go to the website](https://OpenGameMods-group.github.io/ES-Mod-Share/)
 
